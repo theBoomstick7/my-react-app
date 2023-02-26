@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Calculator from './componentts/Calculator';
+import Clicker from './componentts/Clicker';
+// import Movie from './componentts/Movie';
+import Timer from './componentts/Timer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+return(
+  <div className='App'>
+      <Timer start = {0}/>
+      <Calculator  />
+
+      <Clicker />
+      {/* <Movie 
+       title = "Movie 1"
+      year = "208"
+       />; */}
+  </div>
+)  
+};
+
 
 export default App;
